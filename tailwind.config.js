@@ -6,7 +6,21 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+   
     extend: {
+      keyframes: {
+        wiggle: {
+          '0%, 100%': { transform: 'translateY(-5%)' },
+          '50%': { transform: 'translateY(0)' },
+        }
+      },
+      animation: {
+        wiggle: 'wiggle 3s ease-in-out infinite',
+      },
+      colors:{
+        'dBlue':'#4831d4',
+        'dYellow':'#ccf381'
+     },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
