@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Herosection from './Component/Herosection'
+import Herosection2 from './Component/Herosection2'
 
 export default function Home() {
   return (
@@ -7,6 +8,9 @@ export default function Home() {
     <div className='w-screen h-screen'>
 
     <Herosection/>
+    </div>
+    <div className='w-screen h-[80vh]'>
+      <Herosection2/>
     </div>
     </>
     // <div className=' mx-auto bg-dBlue'>

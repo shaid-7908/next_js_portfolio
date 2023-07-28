@@ -8,6 +8,9 @@ module.exports = {
   theme: {
    
     extend: {
+      fontFamily:{
+          popins:['Poppins','sans-serif']
+      },
       keyframes: {
         wiggle: {
           '0%, 100%': { transform: 'translateY(-5%)' },
