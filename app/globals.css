@@ -6,7 +6,7 @@
 .containerWrap1 {
     @apply container mx-auto max-w-5xl
   }
-  .containerWrap2 {
+.containerWrap2 {
     @apply container mx-auto max-w-7xl
   }
 .herosectionBg{
@@ -23,4 +23,18 @@
   .section_hero{
     display: none;
   }
+}
+.resumeHeader{
+  position: relative;
+}
+.resumeHeader::after{
+  content: "";
+  width: 100%;
+  background-color: #ccf381;
+  position: absolute;
+  height: 10px;
+  left: 0;
+  bottom: 0px;
+  z-index: -1;
+  
 }

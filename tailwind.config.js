@@ -11,14 +11,26 @@ module.exports = {
       fontFamily:{
           popins:['Poppins','sans-serif']
       },
+      listStyleType: {
+        none: 'none',
+        disc: 'disc',
+        decimal: 'decimal',
+        square: 'square',
+        roman: 'upper-roman',
+      },
       keyframes: {
         wiggle: {
           '0%, 100%': { transform: 'translateY(-5%)' },
           '50%': { transform: 'translateY(0)' },
+        },
+        customClock:{
+          from:{transform:'rotate(0deg)'},
+          to:{transform:'rotate(360deg)'}
         }
       },
       animation: {
         wiggle: 'wiggle 3s ease-in-out infinite',
+        customClock: 'customClock 3s linear infinite'
       },
       colors:{
         'dBlue':'#4831d4',
