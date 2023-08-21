@@ -34,10 +34,13 @@ export default function Skills() {
     <div className='containerWrap2 flex justify-center items-center   text-center flex-col  p-6 '>
              <h1 className='text-5xl font-bold my-4 text-[#4831d4]'>Skills</h1>
         <motion.div initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration:0.5,delay:0.5}} viewport={{once:true}} className=' grid grid-rows-6 grid-cols-2 md:grid-rows-2 md:grid-cols-6 md:gap-x-8 md:gap-y-8 p-4 gap-y-3 gap-x-2 border-[#ccf381] '>
-         {ImageObj.map((e)=>{
+         {ImageObj.map((e,index)=>{
           return <>
          
-          <div key={e.img} className=' hidden text-center bg-slate-50 shadow-md md:flex-row rounded-md md:flex items-center justify-center'>
+          <motion.div initial={{opacity:0,scale:0.3}}  
+                      whileInView={{opacity:1,scale:1}} 
+                      transition={{duration:(0.8 + ((index +2)/ 10)),delay:0.5}} 
+                      key={index} className=' hidden text-center bg-slate-50 shadow-md md:flex-row rounded-md md:flex items-center justify-center'>
             
           <Image
              alt='python-logo'
@@ -47,8 +50,12 @@ export default function Skills() {
              />
       <h3 className='text-[#3d155f] font-popins  ml-2 font-semibold'>{e.imgName}</h3>
       
-     </div>
-     <div key={e.img} className='md:hidden bg-slate-50 shadow-sm flex-row rounded-md flex items-center justify-center'>
+     </motion.div>
+     <motion.div
+       initial={{opacity:0,scale:0.3}}  
+       whileInView={{opacity:1,scale:1}} 
+       transition={{duration:(0.8 + ((index +2)/ 10)),delay:0.5}}
+       key={e.img} className='md:hidden bg-slate-50 shadow-sm flex-row rounded-md flex items-center justify-center'>
             <div className='overflow-hidden flex-1'>
             <Image
              alt='python-logo'
@@ -60,7 +67,7 @@ export default function Skills() {
          
       <h3 className='text-[#3d155f]  text-left flex-1 font-popins   font-semibold'>{e.imgName}</h3>
       
-     </div>
+     </motion.div>
      </>
          })}
           

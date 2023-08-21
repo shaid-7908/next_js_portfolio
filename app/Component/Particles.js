@@ -22,7 +22,7 @@ export default function Particles1() {
     }, []);
   return (
     <Particles
-    className='w-full h-full fixed top-0 bottom-0 '
+    className='w-full h-full fixed top-10 md:top-0 bottom-0 '
     id="tsparticles"
     init={particlesInit}
     loaded={particlesLoaded}

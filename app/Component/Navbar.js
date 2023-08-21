@@ -1,15 +1,21 @@
 'use client'
 import React from 'react'
 import { useState } from 'react'
-import {FaBars,FaCrosshairs,FaMailBulk} from 'react-icons/fa'
-import { FaXRay } from 'react-icons/fa'
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {faBars,faX} from "@fortawesome/free-solid-svg-icons";
+
 import {motion} from 'framer-motion'
 export default function Navbar({barcolor}) {
+   
   const [menuState,setMenuState]=useState(false)
   return (
     <div className='md:hidden absolute flex flex-col items-end right-0 top-[10px] '>
-      <span className={`text-[${barcolor}] text-3xl p-2`} onClick={()=>setMenuState(!menuState)}>
-        {menuState ? <FaCrosshairs/> : <FaBars/>}
+      <span className={`text-[${barcolor}] text-3xl p-2`} onClick={()=>{setMenuState(!menuState)
+     console.log(menuState)   
+   }
+   }>
+        {menuState ? <FontAwesomeIcon icon={faX}/> : <FontAwesomeIcon icon={faBars}/>}
         </span>
         <div className={`w-screen h-[35vh] bg-white  mt-3 ${menuState ? 'translate-x-0 block' : 'translate-x-[100%] hidden' } transition duration-1000 ease-in-out `}>
            <div className='w-[80%] h-[100%] mx-auto flex'>

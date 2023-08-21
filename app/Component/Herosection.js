@@ -8,6 +8,8 @@ import { AnimatePresence } from 'framer-motion'
 import TransitionPage from './TransitionPage'
 import { useRouter } from 'next/navigation'
 import Particles1 from './Particles'
+import Image from 'next/image'
+import Profile from '../Images/Profile.jpg'
 
 export default function Herosection() {
     const [show,setShow] = useState(false)
@@ -51,8 +53,9 @@ export default function Herosection() {
                     
                     <motion.div
                     initial={{opacity:0,translateX:-40}} whileInView={{opacity:1,translateX:0}} viewport={{once:true}} transition={{duration:0.5}}
-                    className='w-[200px] h-[200px] lg:w-[300px] lg:h-[300px] border-2 m-4  '>
-                        <img className='object-cover translate-y-4  translate-x-4' src='https://devforum-uploads.s3.dualstack.us-east-2.amazonaws.com/uploads/original/4X/1/0/e/10e6c0a439e17280a6f3fa6ae059819af5517efd.png' alt='na'/>
+                    className='w-[200px] h-[200px] lg:w-[300px] lg:h-[400px] border-2 m-4  '>
+                        <Image className='object-cover translate-y-4  translate-x-4' alt='profile_image' src={Profile} width={400} height={300}/>
+                        {/* <img className='object-cover translate-y-4  translate-x-4' src='https://devforum-uploads.s3.dualstack.us-east-2.amazonaws.com/uploads/original/4X/1/0/e/10e6c0a439e17280a6f3fa6ae059819af5517efd.png' alt='na'/> */}
                     </motion.div>
                 </div>
 

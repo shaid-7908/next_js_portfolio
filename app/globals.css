@@ -38,3 +38,17 @@
   z-index: -1;
   
 }
+.resumeHeader2{
+  position: relative;
+}
+.resumeHeader2::after{
+  content: "";
+  width: 100%;
+  background-color: #ccf381;
+  position: absolute;
+  height: 5px;
+  left: 0;
+  bottom: 4px;
+  z-index: -1;
+  
+}

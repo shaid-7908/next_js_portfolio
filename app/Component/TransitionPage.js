@@ -18,25 +18,28 @@ const transitionVariants = {
 export default function TransitionPage() {
   return (
     <>
-    <motion.div className='fixed top-0 bottom-0 right-full w-screen h-screen z-50 bg-[#4831d4]'
+    <motion.div className='fixed top-0 bottom-0 right-full w-screen justify-center items-center h-screen z-50 bg-gradient-to-r from-blue-800 to-blue-500'
     variants={transitionVariants} 
     initial="initial"
     animate="animate"
     transition={{delay:0.2,duration:0.6,ease:'easeInOut'}}
-    ></motion.div>
+    >
+   
 
-     <motion.div className='fixed top-0 bottom-0 right-full w-screen h-screen z-40 bg-[#533DD4]'
+    </motion.div>
+
+     <motion.div className='fixed top-0 bottom-0 right-full w-screen h-screen z-40 bg-gradient-to-r from-blue-700 to-blue-500'
     variants={transitionVariants} 
     initial="initial"
     animate="animate"
     transition={{delay:0.4,duration:0.6,ease:'easeInOut'}}
     ></motion.div>
 
-     <motion.div className='fixed top-0 bottom-0 right-full w-screen h-screen z-30 bg-[#614ED4]'
+     <motion.div className='fixed top-0 bottom-0 right-full w-screen h-screen z-30 bg-[#ccf381]'
     variants={transitionVariants} 
     initial="initial"
     animate="animate"
-    transition={{delay:0.8,duration:0.6,ease:'easeInOut'}}
+    transition={{delay:0.6,duration:0.6,ease:'easeInOut'}}
     ></motion.div>
     </>
   )
