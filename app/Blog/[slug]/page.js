@@ -7,17 +7,20 @@ import Link from 'next/link'
 import Markdown from 'markdown-to-jsx'
 import { FaGithub, FaLinkedin, FaFacebook, FaDownload } from 'react-icons/fa'
 import Footer from '@/app/Component/Footer'
+import { getPostData } from '@/DataFetcher/Getdata'
 
-const getPostContent =(slug)=>{
-const fileContents = fs.readFileSync(`POST/${slug}.md`,'utf-8')
-const matterResult = matter(fileContents)
+// const getPostContent =(slug)=>{
+// const fileContents = fs.readFileSync(`POST/${slug}.md`,'utf-8')
+// const matterResult = matter(fileContents)
 
-return matterResult
-}
+// return matterResult
+// }
+export const dynamic = 'error'
 
-export default function SingleBlog({params}) {
+export default async function SingleBlog({params}) {
     
-    const post = getPostContent(params.slug)
+const post = getPostData(params.slug)
+    
   return (
     <>
        <div className='containerWrap2'>
@@ -60,11 +63,21 @@ export default function SingleBlog({params}) {
     <div className='w-screen h-[70vh] bg-[#3D155F]'>
      <Footer/>
     </div>
-    <div>{params.slug}</div>
+    
     </>
  
   )
+  
 }
+// export async function getStaticProps({params}){
+//   console.log(params)
+//   const slugs =params.slug
+//   const fileContents = fs.readFileSync(`POST/${params.slug}.md`,'utf-8')
+//   const matterResult = matter(fileContents)
+//   return {
+//     props:{slugs}
+//   }
+// }
 
 // export const getStaticPaths = async () =>{
 // const files = fs.readdirSync(path.join('POST'))
@@ -80,10 +93,6 @@ export default function SingleBlog({params}) {
 // }
 // }
 
-// export const getStaticProps = async ({params:{slug}}) =>{
-// console.log(slug)
 
 
-//     return {props:{}}
-// }
 
