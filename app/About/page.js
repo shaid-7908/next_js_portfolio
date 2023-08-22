@@ -9,7 +9,7 @@ import { useRouter } from 'next/navigation'
 import { AnimatePresence,motion } from 'framer-motion'
 import TransitionPage from '../Component/TransitionPage'
 
-export default function page() {
+export default function Page() {
   const router = useRouter()
   return (<>
   <AnimatePresence mode='wait'>

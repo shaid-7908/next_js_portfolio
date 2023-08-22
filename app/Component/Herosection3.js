@@ -7,7 +7,7 @@ export default function Herosection3() {
     <div className='containerWrap2 p-6 flex flex-col md:flex-row'>
         <motion.div initial={{opacity:0,translateY:40}} whileInView={{opacity:1,translateY:0}} viewport={{once:true}} transition={{ duration: 0.5 ,delay:0.9}} className='flex-1  md:p-4 text-left'>
             <h1 className='text-3xl md:text-5xl font-extrabold my-4 text-[#ccf381]'>Over the years</h1>
-            <p className='my-4 font-popins text-white text-sm md:text-base'>I've built products for companies and businesses around the globe ranging from marketing websites to complex solutions and enterprise apps with focus on fast, elegant and accessible user experiences.</p>
+            <p className='my-4 font-popins text-white text-sm md:text-base'>I&apos;ve built products for companies and businesses around the globe ranging from marketing websites to complex solutions and enterprise apps with focus on fast, elegant and accessible user experiences.</p>
 
 <p className='my-4 font-popins text-white text-sm md:text-base'>Currently, I work at Shopify as a Senior Frontend Engineer crafting thoughtful and inclusive experiences that adhere to web standards for over 3 million merchants across the world.</p>
 

@@ -28,7 +28,7 @@ export default function Herosection() {
                     <ul className='flex justify-around text-lgn tracking-wider font-semibold '>
                         <Link href='/' className='mx-4 text-[#ccf381]'>Home</Link>
                         <Link href='/About' className='mx-4 text-[#ccf381]'>About</Link>
-                        <li className='mx-4 text-[#ccf381]'>Blog</li>
+                        <Link href='/Blog' className='mx-4 text-[#ccf381]'>Blog</Link>
                         <li className='mx-4 text-[#ccf381]'>Conatct</li>
                         <li className='mx-4 text-[#ccf381]'>Project</li>
                     </ul>
@@ -54,7 +54,8 @@ export default function Herosection() {
                     <motion.div
                     initial={{opacity:0,translateX:-40}} whileInView={{opacity:1,translateX:0}} viewport={{once:true}} transition={{duration:0.5}}
                     className='w-[200px] h-[200px] lg:w-[300px] lg:h-[400px] border-2 m-4  '>
-                        <Image className='object-cover translate-y-4  translate-x-4' alt='profile_image' src={Profile} width={400} height={300}/>
+                        {/* <Image className='object-cover translate-y-4  translate-x-4' alt='profile_image' 
+                        src={Profile} width={400} height={300}/> */}
                         {/* <img className='object-cover translate-y-4  translate-x-4' src='https://devforum-uploads.s3.dualstack.us-east-2.amazonaws.com/uploads/original/4X/1/0/e/10e6c0a439e17280a6f3fa6ae059819af5517efd.png' alt='na'/> */}
                     </motion.div>
                 </div>

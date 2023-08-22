@@ -14,7 +14,7 @@ export default function Herosection2() {
             <h1 className='text-3xl md:text-5xl font-extrabold my-8'>
               Design</h1>
             <p className='text-sm md:text-lg font-popins text-[#3d155f]'>
-              I'm probably not the typical designer positioned behind an Illustrator artboard adjusting pixels, but I design. Immersed in stylesheets tweaking font sizes and contemplating layouts is where you'll find me (~_^). I'm committed to creating fluent user experiences while staying fashionable.
+              I&aposm probably not the typical designer positioned behind an Illustrator artboard adjusting pixels, but I design. Immersed in stylesheets tweaking font sizes and contemplating layouts is where you&aposll find me . I&aposm committed to creating fluent user experiences while staying fashionable.
               </p>
           </motion.div>
           <div className='text-right p-4 my-8 hidden md:block'>
@@ -47,7 +47,7 @@ export default function Herosection2() {
              viewport={{ once: true }} 
              transition={{ duration: 0.5 }} 
               className='text-sm md:text-lg font-popins text-[#3d155f] '>
-              In building JavaScript applications, I'm equipped with just the right tools, 
+              In building JavaScript applications, I&apos;m equipped with just the right tools, 
               and can absolutely function independently of them to deliver fast, resilient solutions 
               optimized for scale — performance and scalabilty are priorities on my radar.
               </motion.p>
