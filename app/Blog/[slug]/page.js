@@ -8,19 +8,19 @@ import Markdown from 'markdown-to-jsx'
 import { FaGithub, FaLinkedin, FaFacebook, FaDownload } from 'react-icons/fa'
 import Footer from '@/app/Component/Footer'
 
-// const getPostContent =(slug)=>{
-// const fileContents = fs.readFileSync(`POST/${slug}.md`,'utf-8')
-// const matterResult = matter(fileContents)
+const getPostContent =(slug)=>{
+const fileContents = fs.readFileSync(`POST/${slug}.md`,'utf-8')
+const matterResult = matter(fileContents)
 
-// return matterResult
-// }
+return matterResult
+}
 
 export default function SingleBlog({params}) {
     
-    // const post = getPostContent(props.params.slug)
+    const post = getPostContent(params.slug)
   return (
     <>
-       {/* <div className='containerWrap2'>
+       <div className='containerWrap2'>
         <div className='p-3 flex justify-start items-center font-popins relative '>
             <h1 className='text-2xl text-[#4831d4] font-bold tracking-wider '>BengaliCoder</h1>
            <Navbar barcolor='#4831d4'/>
@@ -59,7 +59,7 @@ export default function SingleBlog({params}) {
     </div>
     <div className='w-screen h-[70vh] bg-[#3D155F]'>
      <Footer/>
-    </div> */}
+    </div>
     <div>{params.slug}</div>
     </>
  
