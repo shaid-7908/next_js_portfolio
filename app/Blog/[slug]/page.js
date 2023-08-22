@@ -8,14 +8,14 @@ import Markdown from 'markdown-to-jsx'
 import { FaGithub, FaLinkedin, FaFacebook, FaDownload } from 'react-icons/fa'
 import Footer from '@/app/Component/Footer'
 
-const getPostContent =(slug)=>{
-const fileContents = fs.readFileSync(`POST/${slug}.md`,'utf-8')
-const matterResult = matter(fileContents)
+// const getPostContent =(slug)=>{
+// const fileContents = fs.readFileSync(`POST/${slug}.md`,'utf-8')
+// const matterResult = matter(fileContents)
 
-return matterResult
-}
+// return matterResult
+// }
 
-export default function page() {
+export default function SingleBlog() {
     
     // const post = getPostContent(props.params.slug)
   return (
