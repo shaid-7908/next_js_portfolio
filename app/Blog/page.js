@@ -62,7 +62,7 @@ export default function page({source}) {
               <span className='text-gray-500 text-xs'>{blog.date}</span>
               <h1 className='text-xl my-2 font-bold text-[#4831d4]'>{blog.title}</h1>
               <p className='text-gray-500 text-[0.90rem] font-popins'>{blog.summary}</p>
-              <Link href={`/Blog/1`}>
+              <Link href={`/Blog/${blog.slug}`}>
               <div className='border-[#4831d4] 
                                 border-[1px] w-[20%] 
                                 p-2 text-center my-1 
@@ -73,7 +73,7 @@ export default function page({source}) {
                 
               </div>
               </Link>
-
+             <h1>{blog.slug}</h1>
             </div>
             </>
            ))}
