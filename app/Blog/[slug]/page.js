@@ -15,12 +15,12 @@ const matterResult = matter(fileContents)
 return matterResult
 }
 
-export default function page(props) {
+export default function page() {
     
-    const post = getPostContent(props.params.slug)
+    // const post = getPostContent(props.params.slug)
   return (
     <>
-       <div className='containerWrap2'>
+       {/* <div className='containerWrap2'>
         <div className='p-3 flex justify-start items-center font-popins relative '>
             <h1 className='text-2xl text-[#4831d4] font-bold tracking-wider '>BengaliCoder</h1>
            <Navbar barcolor='#4831d4'/>
@@ -59,7 +59,8 @@ export default function page(props) {
     </div>
     <div className='w-screen h-[70vh] bg-[#3D155F]'>
      <Footer/>
-    </div>
+    </div> */}
+    <div>h</div>
     </>
  
   )
