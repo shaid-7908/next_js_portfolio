@@ -15,7 +15,7 @@ import Footer from '@/app/Component/Footer'
 // return matterResult
 // }
 
-export default function SingleBlog({props}) {
+export default function SingleBlog({params}) {
     
     // const post = getPostContent(props.params.slug)
   return (
@@ -60,7 +60,7 @@ export default function SingleBlog({props}) {
     <div className='w-screen h-[70vh] bg-[#3D155F]'>
      <Footer/>
     </div> */}
-    <div>{props.params.slug}</div>
+    <div>{params.slug}</div>
     </>
  
   )
