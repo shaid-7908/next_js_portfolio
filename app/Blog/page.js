@@ -5,7 +5,11 @@ import fs from "fs";
 import React from 'react'
 import Navbar from '../Component/Navbar'
 import Link from 'next/link';
+import { S3Client } from '@aws-sdk/client-s3';
 
+
+
+export const dynamic = 'error'
 
 const getPostContent = () => {
   const folder = "POST/";

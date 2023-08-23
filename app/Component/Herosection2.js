@@ -14,7 +14,7 @@ export default function Herosection2() {
             <h1 className='text-3xl md:text-5xl font-extrabold my-8'>
               Design</h1>
             <p className='text-sm md:text-lg font-popins text-[#3d155f]'>
-              I&aposm probably not the typical designer positioned behind an Illustrator artboard adjusting pixels, but I design. Immersed in stylesheets tweaking font sizes and contemplating layouts is where you&aposll find me . I&aposm committed to creating fluent user experiences while staying fashionable.
+              I&apos;m probably not the typical designer positioned behind an Illustrator artboard adjusting pixels, but I design. Immersed in stylesheets tweaking font sizes and contemplating layouts is where you&aposll find me . I&apos;m committed to creating fluent user experiences while staying fashionable.
               </p>
           </motion.div>
           <div className='text-right p-4 my-8 hidden md:block'>
